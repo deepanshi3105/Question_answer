@@ -1,0 +1,35 @@
+### 1. Are there unit tests for the API?
+Yes, unit tests can be used to verify API endpoints, validate input data, check prediction responses, and handle invalid requests or errors.
+
+### 2. Are there unit tests for the model?
+Yes, unit tests can verify that the trained model loads correctly, accepts valid input data, and generates predictions in the expected format.
+
+### 3. Are there unit tests for the logging?
+Yes, logging tests can check whether important application events, API requests, errors, and exceptions are recorded correctly.
+
+### 4. Can all unit tests be run with a single script, and do all the unit tests pass?
+Yes, all unit tests can be executed using a single command, such as `python -m pytest`. The test results can be checked to confirm that all tests pass successfully.
+
+### 5. Is there a mechanism to monitor performance?
+Yes, performance can be monitored using model evaluation metrics such as accuracy, precision, recall, and F1-score. API response time and error rates can also be tracked to evaluate application performance.
+
+### 6. Was there an attempt to isolate the read/write unit tests from production models and logs?
+Yes, tests can be isolated using temporary files, separate test logs, and test-specific model files. This prevents unit tests from modifying production data or logs.
+
+### 7. Does the API work as expected, including predictions for a specific country and all countries combined?
+Yes, the API can be designed to accept requests for a specific country and return predictions for that country. It can also support combined predictions across all countries when the appropriate endpoint and aggregation logic are implemented.
+
+### 8. Does data ingestion exist as a function or script to facilitate automation?
+Yes, data ingestion can be implemented as a reusable function or script that loads the dataset, validates the data, handles missing values, and prepares it for model training and prediction.
+
+### 9. Were multiple models compared?
+Yes, multiple machine learning algorithms, such as Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting, can be compared using consistent evaluation metrics to select the most suitable model.
+
+### 10. Did the EDA investigation use visualizations?
+Yes, exploratory data analysis can include visualizations such as bar charts, histograms, scatter plots, and correlation heatmaps to identify patterns, relationships, and potential issues in the dataset.
+
+### 11. Is everything containerized within a working Docker image?
+Yes, the application can be containerized using Docker, with a Dockerfile specifying the Python environment, dependencies, model files, and application startup command. The image should be built and tested to confirm that the application runs successfully.
+
+### 12. Did they use a visualization to compare their model to the baseline model?
+Yes, a bar chart can be used to compare the trained model against a baseline model using the same evaluation metric, such as accuracy or F1-score. This helps demonstrate whether the trained model improves predictive performance.
